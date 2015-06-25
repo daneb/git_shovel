@@ -19,6 +19,8 @@ class GitTroll
 		total_found = git_results["total_count"].to_i
 		pages = (total_found / per_page).to_i
 
+		puts "Heads up - total pages to process #{pages}"
+
 		(1).upto(pages) { |page_no|
 
 			git_results = get_results_from_gitserver(page_no)
@@ -42,7 +44,7 @@ class GitTroll
 
 	private
 	def git_code_search(page_no)
-		 RestClient::Request.execute(:url => "https://#{@token}:x-oauth-basic@#{@url}/search/code?q=#{@keyword}+in:file&page=#{page_no}&per_page=#{@per_page}}",
+		 RestClient::Request.execute(:url => "https://#{@token}:x-oauth-basic@#{@url}/search/code?q=#{@keyword}+in:file&page=#{page_no}&per_page=#{@per_page}&order=asc}",
 		 	:method => :get,
 		 	:verify_ssl => false,
 		 	:headers => { :accept =>  "application/vnd.github.v3.text-match+json" } )
