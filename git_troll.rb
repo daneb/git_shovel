@@ -4,10 +4,11 @@ require 'byebug'
 class GitTroll
 	attr_accessor :url, :token, :keyword, :per_page
 
-	def initialize(url, token, keyword, per_page)
+	def initialize(url, token, keyword, file_name, per_page)
 		@url = url
 		@token = token
 		@keyword = keyword
+		@file_name = file_name
 		@per_page = per_page
 	end
 
@@ -18,7 +19,7 @@ class GitTroll
 		total_found = git_results["total_count"].to_i
 		pages = (total_found / per_page).to_i
 
-		(1).upto(10) { |page_no|
+		(1).upto(pages) { |page_no|
 
 			git_results = get_results_from_gitserver(page_no)
 			items_found = git_results["items"]
@@ -52,7 +53,7 @@ class GitTroll
 	end
 
 	def build_html(htmlbuilder)
-		File.open("index.html", 'w') { |file| file.write("""
+		File.open(@file_name, 'w') { |file| file.write("""
 		<html>
 		<head>
 		Git Passwords
@@ -78,8 +79,9 @@ url = "github.hetzner.co.za/api/v3"
 token = ENV['TOKEN']
 keyword = "password"
 per_page = 20
+file_name = "password_colon.html"
 
-troll = GitTroll.new(url, token, keyword, per_page)
+troll = GitTroll.new(url, token, keyword, file_name, per_page)
 troll.get_html_of_password_usage
 
 

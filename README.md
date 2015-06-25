@@ -6,3 +6,4 @@
 - keyword (eg. "password")
 - pages (20)  // Git Limits returns 
 - url  // currently set to Github Enterprise for Hetzner
+- filename // name of file to save to
