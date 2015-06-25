@@ -1,0 +1,3203 @@
+
+		<html>
+		<head>
+		Git Passwords
+		<!-- Latest compiled and minified CSS -->
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css'>
+		</head>
+		<body>
+		<table class='table'>
+		<thead><td>Repo</td><td>File</td><td>Path</td><td>Code Snippet</td></thead>
+		<tbody>
+		
+				<tr>
+				<td>profile-transfer-tests</td>
+				<td>superserver.yml.example</td>
+				<td>config/superserver.yml.example</td>
+				<td>port: 3000
+password: &lt;password&gt;
+</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>.ruby-gemset</td>
+				<td>/.ruby-gemset</td>
+				<td>password_resetter
+</td>
+				</tr>
+				
+				<tr>
+				<td>cloud</td>
+				<td>dot.my.cnf.j2</td>
+				<td>aerosmith.openstack/roles/mysql-server/templates/dot.my.cnf.j2</td>
+				<td>[client]
+user=root
+password={{ mysql_root_password }}
+</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>server.pp</td>
+				<td>modules/mysql/examples/server.pp</td>
+				<td>class { &#39;mysql::server&#39;:
+  root_password =&gt; &#39;password&#39;,
+}
+</td>
+				</tr>
+				
+				<tr>
+				<td>restore-frontend</td>
+				<td>htpasswd.yml</td>
+				<td>config/htpasswd.yml</td>
+				<td>username: test
+password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>mailbox-password-resetter</td>
+				<td>.ruby-gemset</td>
+				<td>/.ruby-gemset</td>
+				<td>mail-password-resetter
+</td>
+				</tr>
+				
+				<tr>
+				<td>password_validator</td>
+				<td>README</td>
+				<td>/README</td>
+				<td>The password validator does ...
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>htpasswd.yml.shelter</td>
+				<td>modules/bacula_restore_frontend/files/htpasswd.yml.shelter</td>
+				<td>username: test
+password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>htpasswd.yml.shelter</td>
+				<td>modules/dss/files/htpasswd.yml.shelter</td>
+				<td>username: test
+password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>jmx.password.erb</td>
+				<td>modules/activemq/templates/jmx.password.erb</td>
+				<td>admin &lt;%= @console_password %&gt;
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>server.pp</td>
+				<td>modules/profiles/manifests/mcollective/server.pp</td>
+				<td>class profiles::mcollective::server(
+  $password = hiera(&#39;mcollective_password&#39;),
+){
+  class { &#39;::mcollective::server&#39;:
+    password =&gt; $password,
+  }
+}
+</td>
+				</tr>
+				
+				<tr>
+				<td>mailbox-password-resetter</td>
+				<td>mailbox_password_resetter.rb</td>
+				<td>lib/mailbox_password_resetter.rb</td>
+				<td>require &#39;mailbox_password_resetter/password&#39;
+require &#39;mailbox_password_resetter/passwords&#39;
+require</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>connection.yml.erb</td>
+				<td>modules/profiles/templates/diskusage/connection.yml.erb</td>
+				<td>user: &lt;%= @username %&gt;
+password: &lt;%= @password %&gt;
+host: &lt;%= @host %&gt;
+port: 27017
+</td>
+				</tr>
+				
+				<tr>
+				<td>kernels</td>
+				<td>version.rb</td>
+				<td>software/password_validator/lib/password_validator/version.rb</td>
+				<td>module PasswordValidator
+  VERSION = &quot;0.0.1&quot;
+end
+</td>
+				</tr>
+				
+				<tr>
+				<td>cloud</td>
+				<td>controller</td>
+				<td>aerosmith/group_vars/controller</td>
+				<td>---
+admin_password: gnsrrsimpratezV8
+</td>
+				</tr>
+				
+				<tr>
+				<td>password_validator</td>
+				<td>version.rb</td>
+				<td>lib/password_validator/version.rb</td>
+				<td>module PasswordValidator
+  VERSION = &quot;0.0.1&quot;
+end
+</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>password_reset_notification.rb</td>
+				<td>app/models/password_reset_notification.rb</td>
+				<td>class PasswordResetNotification
+  attr_reader :password_reset
+
+  def initialize(password</td>
+				</tr>
+				
+				<tr>
+				<td>database_obfuscator</td>
+				<td>user.rb</td>
+				<td>data_abstraction/data_structures/user.rb</td>
+				<td>class User
+  attr_accessor :username
+  attr_accessor :password
+
+  def initialize(username, password)
+    @username = username
+    @password = password
+  end
+end</td>
+				</tr>
+				
+				<tr>
+				<td>restructure_service</td>
+				<td>superserver.yml</td>
+				<td>config/superserver.yml</td>
+				<td>port: 3000
+password: Y68kP5mR
+</td>
+				</tr>
+				
+				<tr>
+				<td>password_validator</td>
+				<td>encrypt_password.rb</td>
+				<td>spec/support/encrypt_password.rb</td>
+				<td>def encrypt_password(password)
+  salt = (0...8).map{65.+(rand(25)).chr}.join
+  password.crypt(&quot;$1$#{salt}&quot;)
+end
+</td>
+				</tr>
+				
+				<tr>
+				<td>password_validator</td>
+				<td>password_validator.rb</td>
+				<td>lib/password_validator.rb</td>
+				<td>require &quot;password_validator/version&quot;
+require &quot;password_validator/base&quot;
+require &quot;password</td>
+				</tr>
+				
+				<tr>
+				<td>password_validator</td>
+				<td>assessment.rb</td>
+				<td>lib/password_validator/assessment.rb</td>
+				<td>module PasswordValidator
+
+  class Assessment
+
+    def initialize(credential, password = nil</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>root.pp</td>
+				<td>modules/login/manifests/root.pp</td>
+				<td>class login::root {
+
+  # The &quot;amanian&quot; password
+  $root_password = &#39;$1$OLqWWUry</td>
+				</tr>
+				
+				<tr>
+				<td>antispam_registration</td>
+				<td>password_updater.rb</td>
+				<td>lib/antispam_registration/password_updater.rb</td>
+				<td>require &#39;faraday&#39;
+
+module Antispam_registration
+  class PasswordUpdater
+
+    def self</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>mysql_user.pp</td>
+				<td>modules/mysql/examples/mysql_user.pp</td>
+				<td>$mysql_root_pw = &#39;password&#39;
+
+class { &#39;mysql::server&#39;:
+  root_password =&gt; &#39;password&#39;,
+}
+
+mysql_user</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>htpasswd.yml.staging</td>
+				<td>modules/bacula_restore_frontend/files/htpasswd.yml.staging</td>
+				<td>username: restore_session_start
+password: ieghovaaxu2V
+</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>_password_change_form.html.erb</td>
+				<td>changecontrol/vendor/gems/activeldap-1.0.1/examples/al-admin/app/views/users/_password_change_form.html.erb</td>
+				<td>
+&lt;h3&gt;&lt;%= _(&quot;Change password&quot;) %&gt;&lt;/h3&gt;
+
+&lt;table class=&quot;values form&quot;&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;row</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>_password_change_form.html.erb</td>
+				<td>ics/vendor/gems/activeldap-1.0.1/examples/al-admin/app/views/users/_password_change_form.html.erb</td>
+				<td>
+&lt;h3&gt;&lt;%= _(&quot;Change password&quot;) %&gt;&lt;/h3&gt;
+
+&lt;table class=&quot;values form&quot;&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;row</td>
+				</tr>
+				
+				<tr>
+				<td>order_manager</td>
+				<td>http_authentication.yml</td>
+				<td>config/application/http_authentication.yml</td>
+				<td>development:
+  username: development
+  password: D3f1n1t10n!
+test:
+  username: incredibles</td>
+				</tr>
+				
+				<tr>
+				<td>sunrise</td>
+				<td>_form.html.erb</td>
+				<td>app/views/sessions/_form.html.erb</td>
+				<td> /&gt;
+    &lt;%= f.text_field :username %&gt;&lt;/label&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;label for=&quot;password&quot;&gt;Password&lt;br</td>
+				</tr>
+				
+				<tr>
+				<td>hermes</td>
+				<td>bulksms.yml.example</td>
+				<td>config/bulksms.yml.example</td>
+				<td>user: testuser
+password: testpassword
+test_number: 27111111111
+</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>aaapi.yml</td>
+				<td>modules/password_resetter/files/shared/config/aaapi.yml</td>
+				<td>development:
+  uri_prefix: &quot;http://aaapi.vagrantup.com&quot;
+  username: forgot_password
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>changecontrol</td>
+				<td>_password_change_form.html.erb</td>
+				<td>vendor/gems/activeldap-1.0.1/examples/al-admin/app/views/users/_password_change_form.html.erb</td>
+				<td>
+&lt;h3&gt;&lt;%= _(&quot;Change password&quot;) %&gt;&lt;/h3&gt;
+
+&lt;table class=&quot;values form&quot;&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;row</td>
+				</tr>
+				
+				<tr>
+				<td>pxe</td>
+				<td>expire-administrator-password.vbs</td>
+				<td>smb/w2k8.amd64/$OEM$/$$/Setup/Scripts/expire-administrator-password.vbs</td>
+				<td>/smb/scripts/expire-administrator-password.vbs</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh3</td>
+				<td>init.js</td>
+				<td>public/application/shared/directives/inputs/password/init.js</td>
+				<td>(function() {
+    angular.module(&#39;app.directives.password&#39;, [])
+    .directive(&#39;inputPassword</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh</td>
+				<td>management_password_steps.rb</td>
+				<td>features/step_definitions/management_password_steps.rb</td>
+				<td>When /^I view Update Management Password$/ do
+  visit_konsoleh &#39;/change_password.php&#39;
+end
+
+When</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>khapi.yaml.erb</td>
+				<td>modules/pxe/templates/khapi.yaml.erb</td>
+				<td>host: &lt;%= @khapi_host %&gt;
+path: &lt;%= @khapi_path %&gt;
+username: &lt;%= @khapi_username %&gt;
+password: &lt;%= @khapi_password %&gt;
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>aaapi.yml.erb</td>
+				<td>modules/rejproc/templates/aaapi.yml.erb</td>
+				<td>&lt;%= @rejproc_environment %&gt;:
+  uri_prefix: &lt;%= @aaapi_host %&gt;
+  username: &lt;%= @aaapi_user %&gt;
+  password: &lt;%= @aaapi_password %&gt;  
+</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>authentication_headers.rb</td>
+				<td>spec/support/helpers/authentication_headers.rb</td>
+				<td>def authentication_headers(username, password)
+  {&quot;HTTP_AUTHORIZATION&quot; =&gt; &quot;Basic &quot; + Base64::encode64(&quot;#{username}:#{password}&quot;)}
+end
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>database.yml.erb</td>
+				<td>modules/dashboard/templates/database.yml.erb</td>
+				<td> %&gt;
+  password: &lt;%= dashboard_password %&gt;
+  encoding: &lt;%= dashboard_charset %&gt;
+</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>account_security.pp</td>
+				<td>modules/mysql/examples/server/account_security.pp</td>
+				<td>class { &#39;mysql::server&#39;:
+  root_password =&gt; &#39;password&#39;,
+}
+class { &#39;mysql::server::account_security&#39;: }
+</td>
+				</tr>
+				
+				<tr>
+				<td>whmcs</td>
+				<td>env</td>
+				<td>docker/mysql/env</td>
+				<td>MYSQL_ROOT_PASSWORD=murder5
+MYSQL_DATABASE=whmcs
+MYSQL_USER=whmcs
+MYSQL_PASSWORD=whmcs
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>password_resets_controller_spec.rb</td>
+				<td>spec/controllers/password_resets_controller_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+
+describe PasswordResetsController do
+
+  before(:each) do</td>
+				</tr>
+				
+				<tr>
+				<td>kernels</td>
+				<td>password_validator.rb</td>
+				<td>software/password_validator/lib/password_validator.rb</td>
+				<td>require &quot;password_validator/version&quot;
+require &#39;ostruct&#39;
+
+module PasswordValidator
+
+  class Base</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>password_reset_spec.rb</td>
+				<td>spec/models/password_reset_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+
+describe PasswordReset do
+
+  before(:each) do
+    @profile = mock_profile</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>password_reset_notification_spec.rb</td>
+				<td>spec/models/password_reset_notification_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+
+describe PasswordResetNotification do
+
+  let(:password_reset) { Fabricate</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>choose_password.html.erb_spec.rb</td>
+				<td>spec/views/password_resets/choose_password.html.erb_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+
+describe &#39;password_resets/choose_password.html.erb&#39; do
+
+  before(:each) do</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>20111203000845_rename_password_reset_redeemed_to_completed.rb</td>
+				<td>db/migrate/20111203000845_rename_password_reset_redeemed_to_completed.rb</td>
+				<td>class RenamePasswordResetRedeemedToCompleted &lt; ActiveRecord::Migration
+  def up
+    add_column</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>20111206190958_rename_password_reset_referer_to_login_link.rb</td>
+				<td>db/migrate/20111206190958_rename_password_reset_referer_to_login_link.rb</td>
+				<td>class RenamePasswordResetRefererToLoginLink &lt; ActiveRecord::Migration
+  def up
+    add_column</td>
+				</tr>
+				
+				<tr>
+				<td>registrar_proxy</td>
+				<td>staff_authentication.rb</td>
+				<td>app/middleware/staff_authentication.rb</td>
+				<td>, password)
+      staff?(username) and valid_password?(password) and Hetzner::Aaapi.authenticate</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>mysql_plugin.pp</td>
+				<td>modules/mysql/examples/mysql_plugin.pp</td>
+				<td>class { &#39;mysql::server&#39;:
+  root_password =&gt; &#39;password&#39;
+}
+
+$validate_password_soname = $::osfamily</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh3</td>
+				<td>password.html</td>
+				<td>public/application/shared/directives/inputs/password/password.html</td>
+				<td>&lt;label&gt;&lt;input type=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;Password&quot; ng-model=&quot;model.password</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh3</td>
+				<td>password_repeat.html</td>
+				<td>public/application/shared/directives/inputs/password_repeat/password_repeat.html</td>
+				<td>&lt;label&gt;&lt;input type=&quot;password&quot; name=&quot;password_repeat&quot; placeholder=&quot;Repeat Password&quot; ng-model=&quot;user</td>
+				</tr>
+				
+				<tr>
+				<td>password_validator</td>
+				<td>base.rb</td>
+				<td>lib/password_validator/base.rb</td>
+				<td>require &#39;password_validator/assessment&#39;
+
+
+module PasswordValidator
+
+  class Base
+
+    def assess</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>test_user_password.rb</td>
+				<td>changecontrol/vendor/gems/activeldap-1.0.1/test/test_user_password.rb</td>
+				<td>require &#39;al-test-utils&#39;
+
+class TestUserPassword &lt; Test::Unit::TestCase
+  priority :must
+
+  priority</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>test_user_password.rb</td>
+				<td>ics/vendor/gems/activeldap-1.0.1/test/test_user_password.rb</td>
+				<td>require &#39;al-test-utils&#39;
+
+class TestUserPassword &lt; Test::Unit::TestCase
+  priority :must
+
+  priority</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>20111201162929_convert_password_reset_status_to_boolean.rb</td>
+				<td>db/migrate/20111201162929_convert_password_reset_status_to_boolean.rb</td>
+				<td>class ConvertPasswordResetStatusToBoolean &lt; ActiveRecord::Migration
+  def up
+    add_column</td>
+				</tr>
+				
+				<tr>
+				<td>changecontrol</td>
+				<td>test_user_password.rb</td>
+				<td>vendor/gems/activeldap-1.0.1/test/test_user_password.rb</td>
+				<td>require &#39;al-test-utils&#39;
+
+class TestUserPassword &lt; Test::Unit::TestCase
+  priority :must
+
+  priority</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh</td>
+				<td>management_password.feature</td>
+				<td>features/management_password.feature</td>
+				<td>Feature: Management Password
+  In order to allow clients to set secure management passwords
+  we</td>
+				</tr>
+				
+				<tr>
+				<td>mailbox-password-resetter</td>
+				<td>password_spec.rb</td>
+				<td>spec/mailbox_password_resetter/password_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+
+describe &quot;MailboxPasswordResetter&quot; do
+
+  describe &quot;::Password&quot; do</td>
+				</tr>
+				
+				<tr>
+				<td>sunrise</td>
+				<td>session.rb</td>
+				<td>app/models/session.rb</td>
+				<td>class Session
+  extend ActiveModel::Naming
+
+  attr_accessor :username, :password
+
+  def initialize</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>20111206194138_add_indices_to_password_resets.rb</td>
+				<td>db/migrate/20111206194138_add_indices_to_password_resets.rb</td>
+				<td>class AddIndicesToPasswordResets &lt; ActiveRecord::Migration
+  def change
+    add_index</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>password_reset_fabricator.rb</td>
+				<td>spec/fabricators/password_reset_fabricator.rb</td>
+				<td>Fabricator(:password_reset) do
+  client_number     &#39;c1234567890&#39;
+  email_address     &#39;dojo@hetzner</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh3</td>
+				<td>init.js</td>
+				<td>public/application/shared/directives/inputs/password_repeat/init.js</td>
+				<td>(function() {
+    angular.module(&#39;app.directives.password_repeat&#39;, [])
+    .directive</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_utilities</td>
+				<td>passwords.cfg</td>
+				<td>mysql_db_test/passwords.cfg</td>
+				<td>host: sql1.jnb1.host-h.net
+login: igorspyjnz_4, password: fYzS7DR8
+login: igorspyjnz_4_w, password: hVBEXsV8
+login: igorspyjnz_4_r, password: ANGjrvU8
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>profile-transfer-service</td>
+				<td>ftp_credentials.rb</td>
+				<td>lib/web/models/ftp_credentials.rb</td>
+				<td>
+
+        def password_update
+          password = password</td>
+				</tr>
+				
+				<tr>
+				<td>smartpages_evolution</td>
+				<td>test_haddock.rb</td>
+				<td>vendor/gems/haddock-0.2.1/test/test_haddock.rb</td>
+				<td>
+
+  def test_generates_password
+    password = Password.generate
+    assert_instance_of String</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>user_password.rb</td>
+				<td>changecontrol/vendor/gems/activeldap-1.0.1/lib/active_ldap/user_password.rb</td>
+				<td>require &#39;English&#39;
+require &#39;md5&#39;
+require &#39;sha1&#39;
+
+module ActiveLdap
+  module UserPassword</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>user_password.rb</td>
+				<td>ics/vendor/gems/activeldap-1.0.1/lib/active_ldap/user_password.rb</td>
+				<td>require &#39;English&#39;
+require &#39;md5&#39;
+require &#39;sha1&#39;
+
+module ActiveLdap
+  module UserPassword</td>
+				</tr>
+				
+				<tr>
+				<td>changecontrol</td>
+				<td>user_password.rb</td>
+				<td>vendor/gems/activeldap-1.0.1/lib/active_ldap/user_password.rb</td>
+				<td>require &#39;English&#39;
+require &#39;md5&#39;
+require &#39;sha1&#39;
+
+module ActiveLdap
+  module UserPassword</td>
+				</tr>
+				
+				<tr>
+				<td>aaapi</td>
+				<td>bcrypt_helper.rb</td>
+				<td>spec/support/helpers/bcrypt_helper.rb</td>
+				<td>def bcrypt(cleartext)
+  BCrypt::Password.create(cleartext).to_s
+end
+</td>
+				</tr>
+				
+				<tr>
+				<td>mailbox-password-resetter</td>
+				<td>version.rb</td>
+				<td>lib/mail-password-resetter/version.rb</td>
+				<td>module Mail
+  module Password
+    module Resetter
+      VERSION = &quot;0.0.1&quot;
+    end
+  end
+end
+</td>
+				</tr>
+				
+				<tr>
+				<td>mailbox-password-resetter</td>
+				<td>password.rb</td>
+				<td>lib/mailbox_password_resetter/password.rb</td>
+				<td>module MailboxPasswordResetter
+
+  class Password
+
+    def self.change(mail_account, user, password</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>htpasswd.yml.production</td>
+				<td>modules/bacula_restore_frontend/files/htpasswd.yml.production</td>
+				<td>username: restore_session_start
+password: HU6dTK1kWwup
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>db.pp</td>
+				<td>modules/mongodb/manifests/db.pp</td>
+				<td>
+#
+#  user - Database username.
+#  password_hash - Hashed password. Hex encoded md5 hash of &quot;$username</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>ldap_user.rb</td>
+				<td>changecontrol/vendor/gems/activeldap-1.0.1/examples/al-admin/app/models/ldap_user.rb</td>
+				<td>require &#39;active_ldap/user_password&#39;
+
+class LdapUser &lt; ActiveLdap::Base
+  ldap_mapping :prefix</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>ldap_user.rb</td>
+				<td>ics/vendor/gems/activeldap-1.0.1/examples/al-admin/app/models/ldap_user.rb</td>
+				<td>require &#39;active_ldap/user_password&#39;
+
+class LdapUser &lt; ActiveLdap::Base
+  ldap_mapping :prefix</td>
+				</tr>
+				
+				<tr>
+				<td>pxeweb</td>
+				<td>user.rb</td>
+				<td>app/models/user.rb</td>
+				<td>
+
+
+  attr_accessor :password
+  attr_accessible :name, :password
+
+  validates_uniqueness_of :name</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>callback_authentication.yml</td>
+				<td>config/callback_authentication.yml</td>
+				<td>---
+development:
+  hetzner-api.vagrantup.com:
+    username: hetzner_api
+    password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>capi.yml.example</td>
+				<td>config/capi.yml.example</td>
+				<td>uri: &quot;http://test.capi&quot;
+username: test
+password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>quotaman</td>
+				<td>config/quotaman</td>
+				<td>---
+uri: &quot;http://localhost&quot;
+username: quota
+password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>quotaman.yml.example</td>
+				<td>config/quotaman.yml.example</td>
+				<td>---
+uri: &quot;http://localhost&quot;
+username: quota
+password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>order_manager</td>
+				<td>hermes.yml</td>
+				<td>config/hermes.yml</td>
+				<td>test:
+  endpoint: &quot;http://localhost:9393/&quot;
+  username: &#39;testuser&#39;
+  password: &#39;secret&#39;
+
+development</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>password_reset_helper.rb</td>
+				<td>app/helpers/password_reset_helper.rb</td>
+				<td>module PasswordResetHelper
+
+  def login_link(text, password_reset)
+    if password_reset.login_link</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>complete.html.erb</td>
+				<td>app/views/password_resets/complete.html.erb</td>
+				<td>&lt;div class=&#39;success&#39;&gt;
+  &lt;p&gt;The management password for your profile &lt;b&gt;&lt;%= @password</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>request_authentication.html.erb</td>
+				<td>app/views/password_resets/request_authentication.html.erb</td>
+				<td>  &lt;div class=&#39;success&#39;&gt;
+    &lt;p&gt;A password reset link has been sent to &lt;b&gt;&lt;%= @password</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>password_reset_mailer_settings_spec.rb</td>
+				<td>spec/lib/password_reset_mailer_settings_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+
+describe PasswordResetMailerSettings do
+
+  it &quot;combines host and protocol to</td>
+				</tr>
+				
+				<tr>
+				<td>registrar_proxy</td>
+				<td>mail-poller.yml</td>
+				<td>config/mail-poller.yml</td>
+				<td>host: localhost
+username: regprox
+password: secret
+mailbox: INBOX
+</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>aaapi.yml.erb</td>
+				<td>modules/konsoleh/templates/aaapi.yml.erb</td>
+				<td>uri_prefix: &quot;http://&lt;%= @aaapi_host %&gt;/&quot;
+username: konsoleh
+password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>statement_mailer</td>
+				<td>hermes_example.yml</td>
+				<td>config/hermes_example.yml</td>
+				<td>endpoint: &quot;http://localhost:9393/&quot;
+username: &#39;testuser&#39;
+password: &#39;secret&#39;
+</td>
+				</tr>
+				
+				<tr>
+				<td>bulk-restructure-service</td>
+				<td>smartpages.yml</td>
+				<td>config/smartpages.yml</td>
+				<td>username: johan.vandyk@hetzner.co.za
+password: Chei4ohw
+</td>
+				</tr>
+				
+				<tr>
+				<td>changecontrol</td>
+				<td>ldap_user.rb</td>
+				<td>vendor/gems/activeldap-1.0.1/examples/al-admin/app/models/ldap_user.rb</td>
+				<td>require &#39;active_ldap/user_password&#39;
+
+class LdapUser &lt; ActiveLdap::Base
+  ldap_mapping :prefix</td>
+				</tr>
+				
+				<tr>
+				<td>billing_run</td>
+				<td>dblogin</td>
+				<td>vm-scripts/bin/dblogin</td>
+				<td>#!/bin/bash
+mysql -u root --password=secret konsoleh_genie
+</td>
+				</tr>
+				
+				<tr>
+				<td>pxe</td>
+				<td>user.rb</td>
+				<td>var/www/rz-admin/app/models/user.rb</td>
+				<td>
+
+
+  attr_accessor :password
+  attr_accessible :name, :password
+
+  validates_uniqueness_of :name</td>
+				</tr>
+				
+				<tr>
+				<td>sso_sp_ruby</td>
+				<td>_admin.html.erb</td>
+				<td>app/views/layouts/_admin.html.erb</td>
+				<td>&lt;center&gt;&lt;b&gt;Remember to password protect the admin namespace!&lt;/b&gt;&lt;/center&gt;
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>htpasswd</td>
+				<td>bcrypt_helper.rb</td>
+				<td>spec/support/helpers/bcrypt_helper.rb</td>
+				<td>def bcrypt(cleartext)
+  BCrypt::Password.create(cleartext).to_s
+end
+</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner-profile</td>
+				<td>profile.yml</td>
+				<td>config/profile.yml</td>
+				<td>test:
+  uri: &quot;http://localhost:3000/&quot;
+  user: test
+  password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner-profile</td>
+				<td>profile.yml</td>
+				<td>examples/profile.yml</td>
+				<td>test:
+  uri: &quot;http://localhost:3000/&quot;
+  user: test
+  password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>mysql_db.pp</td>
+				<td>modules/mysql/examples/mysql_db.pp</td>
+				<td>class { &#39;mysql::server&#39;:
+  root_password =&gt; &#39;password&#39;
+}
+mysql::db { &#39;mydb&#39;:
+  user     =&gt; &#39;myuser</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>add.pp</td>
+				<td>modules/rabbitmq/tests/user/add.pp</td>
+				<td>rabbitmq_user { [&#39;blah2&#39;, &#39;blah3&#39;, &#39;blah4&#39;]:
+  password =&gt; &#39;phoey!&#39;,
+  #provider =&gt; &#39;rabbitmqctl&#39;,
+}
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>client.pp</td>
+				<td>modules/profiles/manifests/mcollective/client.pp</td>
+				<td>(&#39;is_collective_hub&#39;, false),
+  $password          = hiera(&#39;mcollective_password&#39;),
+) {
+  class</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>production.pp</td>
+				<td>modules/password_resetter/manifests/production.pp</td>
+				<td>class password_resetter::production {
+
+  include apache2::ssl
+  include password_resetter
+
+  $user</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>staging.pp</td>
+				<td>modules/password_resetter/manifests/staging.pp</td>
+				<td>class password_resetter::staging {
+
+  include openssl::snakeoil
+  include password</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh</td>
+				<td>mailbox_password_validation.feature</td>
+				<td>features/mailbox_password_validation.feature</td>
+				<td>Feature: Mailbox password validation
+
+  @javascript
+  Scenario: Successfull mailbox password update</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>password_reset_mailer.rb</td>
+				<td>app/mailers/password_reset_mailer.rb</td>
+				<td>class PasswordResetMailer &lt; ActionMailer::Base
+
+  helper :application
+
+  default :from</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>new.html.erb_spec.rb</td>
+				<td>spec/views/password_resets/new.html.erb_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+
+describe &#39;password_resets/new.html.erb&#39; do
+
+  it &quot;should render a form that</td>
+				</tr>
+				
+				<tr>
+				<td>nasr</td>
+				<td>nagios_process_shared.rb</td>
+				<td>lib/nagios_process_shared.rb</td>
+				<td> : false
+    cachemgr_password_file = home + &#39;/.cachemgr_password&#39;
+  
+    cachemgr_password = nil
+    if</td>
+				</tr>
+				
+				<tr>
+				<td>mailbox-password-resetter</td>
+				<td>mail-password-resetter.rb</td>
+				<td>lib/mail-password-resetter.rb</td>
+				<td>require &quot;mail-password-resetter/version&quot;
+
+module Mail
+  module Password
+    module Resetter
+      # Your code goes here...
+    end
+  end
+end
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>bulksms.yml.erb</td>
+				<td>modules/hermes/templates/bulksms.yml.erb</td>
+				<td>user: &lt;%= @hermes_bulksms_user %&gt;
+password: &lt;%= @hermes_bulksms_password %&gt;
+&lt;% if @domain == &#39;tst1.host-h.net&#39; -%&gt;
+test_number: 27711587536
+&lt;% end -%&gt;
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>jquery.validate.password.js</td>
+				<td>modules/infrastructure/files/usr/www/users/he/admin/javascripts/jquery/jquery.validate.password.js</td>
+				<td>/*
+ * jQuery validate.password plug-in 1.0
+ *
+ * http://bassistance.de/jquery-plugins</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>database.yml.erb</td>
+				<td>modules/pxe/templates/database.yml.erb</td>
+				<td>: &lt;%= @pxe_mysql_user %&gt;
+  password: &lt;%= @pxe_mysql_password %&gt;
+  host: &lt;%= @pxe_mysql_host %&gt;
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>hetzner_api.yml.shelter</td>
+				<td>modules/registrar_proxy/files/shared/config/hetzner_api.yml.shelter</td>
+				<td>test:
+  &quot;hetzner-api.vagrantup.com&quot;:
+    username: hetzner_api
+    password: secret
+
+development</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>hetzner_api.yml.erb</td>
+				<td>modules/rejproc/templates/hetzner_api.yml.erb</td>
+				<td>: &lt;%= @hetzner_api_rejproc_user %&gt;
+  password: &lt;%= @hetzner_api_rejproc_password %&gt;
+</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh</td>
+				<td>jquery.validate.password.js</td>
+				<td>htdocs/templates/ui-default/en/javascripts/jquery/jquery.validate.password.js</td>
+				<td>/*
+ * jQuery validate.password plug-in 1.0
+ *
+ * http://bassistance.de/jquery-plugins</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh</td>
+				<td>class.change_password.php</td>
+				<td>includes/classes/class.change_password.php</td>
+				<td>&lt;?php
+require_once(SITE_BACKEND.&#39;/classes/class.aaapi.php&#39;);
+
+class ChangePassword {
+    function</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh</td>
+				<td>change_password_result.res</td>
+				<td>includes/ui-default/en/change_password/change_password_result.res</td>
+				<td>&lt;?php
+$RSRC[&quot;TITLE_TEXT&quot;]			= &quot;Update&amp;nbsp;Management&amp;nbsp;Password&quot;;
+$RSRC[&quot;kH_TEMPLATE</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>aaapi.yml</td>
+				<td>config/aaapi.yml</td>
+				<td>test:
+  uri: &quot;http://localhost:3001/&quot;
+  username: test
+  password: secret
+
+development:
+  uri</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>aaapi.yml.example</td>
+				<td>config/aaapi.yml.example</td>
+				<td>test:
+  uri: &quot;http://localhost:3001/&quot;
+  username: test
+  password: secret
+
+development:
+  uri</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>hermes.yml</td>
+				<td>config/hermes.yml</td>
+				<td>test:
+  endpoint: &quot;http://localhost:9393/&quot;
+  username: &#39;testuser&#39;
+  password: &#39;secret&#39;
+
+development</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>aaapi.yml.example</td>
+				<td>config/aaapi.yml.example</td>
+				<td>development:
+  uri_prefix: &quot;http://localhost:3001&quot;
+  username: &quot;test&quot;
+  password: &quot;secret&quot;
+
+test</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>20111206110007_add_referer_to_password_reset.rb</td>
+				<td>db/migrate/20111206110007_add_referer_to_password_reset.rb</td>
+				<td>class AddRefererToPasswordReset &lt; ActiveRecord::Migration
+  def change
+    add_column :password_resets, :referer, :string
+  end
+end
+</td>
+				</tr>
+				
+				<tr>
+				<td>registrar_proxy</td>
+				<td>aaapi.yml.example</td>
+				<td>config/aaapi.yml.example</td>
+				<td>development:
+  uri_prefix: http://localhost:3001
+  username: test
+  password: secret
+
+test</td>
+				</tr>
+				
+				<tr>
+				<td>registrar_proxy</td>
+				<td>hetzner_api.yml.example</td>
+				<td>config/hetzner_api.yml.example</td>
+				<td>test:
+  &quot;hetzner-api.vagrantup.com&quot;:
+    username: hetzner_api
+    password: secret
+
+development</td>
+				</tr>
+				
+				<tr>
+				<td>reject_proc</td>
+				<td>aaapi.yml.example</td>
+				<td>config/aaapi.yml.example</td>
+				<td>development:
+  uri_prefix: http://localhost:3001
+  username: test
+  password: secret
+
+test</td>
+				</tr>
+				
+				<tr>
+				<td>reject_proc</td>
+				<td>hetzner_api.yml.example</td>
+				<td>config/hetzner_api.yml.example</td>
+				<td>development:
+  uri: http://localhost:3000
+  username: test
+  password: secret
+
+test:
+  uri: http://localhost:3000
+  username: test
+  password: secret
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>hetzner_api.yml</td>
+				<td>modules/registrar_proxy/files/shared/config/hetzner_api.yml</td>
+				<td>test:
+  &quot;hetzner-api.vagrantup.com&quot;:
+    username: hetzner_api
+    password: secret
+
+development</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>param.pp</td>
+				<td>modules/chs/manifests/param.pp</td>
+				<td>class chs::param {
+
+  #More info here : https://httpd.apache.org/docs/2.2/misc/password</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>backup.pp</td>
+				<td>modules/mysql/examples/backup.pp</td>
+				<td>class { &#39;mysql::server&#39;:
+  root_password =&gt; &#39;password&#39;
+}
+
+class { &#39;mysql::server::backup</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>spamexperts.yml.example</td>
+				<td>config/spamexperts.yml.example</td>
+				<td>test:
+  uri: &quot;http://blah.spam.something.something&quot;
+  username: spam_user 
+  password: server_pass
+  domain_password: domain_pass
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>mongoid.yml.erb</td>
+				<td>modules/profiles/templates/antispam/mongoid.yml.erb</td>
+				<td>:
+        - &lt;%= @mongo_host %&gt;:&lt;%= @mongo_port %&gt;
+      username: &lt;%= @mongo_username %&gt;
+      password: &lt;%= @mongo_password %&gt;
+</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>profile.yml</td>
+				<td>config/profile.yml</td>
+				<td>staging:
+  uri: &quot;http://apistage.konsoleh.chs.hetzner.co.za&quot;
+  user: password</td>
+				</tr>
+				
+				<tr>
+				<td>mailadmin</td>
+				<td>mail_user.css.scss</td>
+				<td>app/assets/stylesheets/mail_user.css.scss</td>
+				<td>;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type=&quot;password</td>
+				</tr>
+				
+				<tr>
+				<td>password_validator</td>
+				<td>assessment_spec.rb</td>
+				<td>spec/password_validator/assessment_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+require &#39;ostruct&#39;
+
+require &#39;password_validator/assessment&#39;
+
+describe</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>common.css</td>
+				<td>modules/infrastructure/files/usr/www/users/he/admin/styles/common.css</td>
+				<td>.password-meter {
+        position: relative;
+        width: 93%;
+}
+.password</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>reset_password_steps.rb</td>
+				<td>features/step_definitions/reset_password_steps.rb</td>
+				<td># encoding: utf-8
+
+Given /^a profile$/ do
+  @password = &#39;grmcM7SJJKp0&#39;
+  @profile = ProfileFacade</td>
+				</tr>
+				
+				<tr>
+				<td>php5</td>
+				<td>password.phpt</td>
+				<td>ext/oci8/tests/password.phpt</td>
+				<td>--TEST--
+oci_password_change()
+--SKIPIF--
+&lt;?php if (!extension_loaded(&#39;oci8&#39;)) die(&quot;skip no oci8</td>
+				</tr>
+				
+				<tr>
+				<td>php5</td>
+				<td>password_new.phpt</td>
+				<td>ext/oci8/tests/password_new.phpt</td>
+				<td>--TEST--
+oci_password_change()
+--SKIPIF--
+&lt;?php if (!extension_loaded(&#39;oci8&#39;)) die(&quot;skip no oci8</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>password_spec.rb</td>
+				<td>spec/lib/password_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+
+describe Password do
+  it &quot;generates a password that is alpha-numeric and 16</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>dedi13.cpt3.host-h.net.yml</td>
+				<td>config/dedi13.cpt3.host-h.net.yml</td>
+				<td>hostname: dedi13.cpt3.host-h.net
+host_api:
+  username: konsoleh_rw
+  password: mm5rX8ttD6EaFFbkQQRm</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>dedi13.cpt3.host-h.net.yml</td>
+				<td>spec/config/dedi13.cpt3.host-h.net.yml</td>
+				<td>hostname: dedi13.cpt3.host-h.net
+host_api:
+  username: konsoleh_rw
+  password: mm5rX8ttD6EaFFbkQQRm</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>postgresql_password.rb</td>
+				<td>modules/postgresql/lib/puppet/parser/functions/postgresql_password.rb</td>
+				<td># hash a string as mysql&#39;s &quot;PASSWORD()&quot; function would do it
+require &#39;digest/md5&#39;
+
+module Puppet</td>
+				</tr>
+				
+				<tr>
+				<td>php5</td>
+				<td>password_old.phpt</td>
+				<td>ext/oci8/tests/password_old.phpt</td>
+				<td> extension&quot;); ?&gt;
+--FILE--
+&lt;?php
+
+require dirname(__FILE__).&quot;/connect.inc&quot;;
+
+$new_password = &quot;test</td>
+				</tr>
+				
+				<tr>
+				<td>registrar_proxy</td>
+				<td>rack_authentication_middleware.rb</td>
+				<td>app/middleware/rack_authentication_middleware.rb</td>
+				<td> = app
+    end
+
+    def call(env)
+      unless env[&#39;REMOTE_USER&#39;]
+        username, password</td>
+				</tr>
+				
+				<tr>
+				<td>reject_proc</td>
+				<td>fake_basic_auth_helper.rb</td>
+				<td>spec/support/helpers/fake_basic_auth_helper.rb</td>
+				<td>def fake_basic_auth(username = &#39;username&#39;, password = &#39;password&#39;)
+  if request
+    request.env</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>postgresql_password.rb</td>
+				<td>modules/postgresql/lib/puppet/parser/functions/postgresql_password.rb</td>
+				<td># hash a string as mysql&#39;s &quot;PASSWORD()&quot; function would do it
+require &#39;digest/md5&#39;
+
+module Puppet</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>postgresql.pp</td>
+				<td>modules/profiles/manifests/nsdb/postgresql.pp</td>
+				<td>&#39;,
+    database_password      =&gt; &#39;DCQm2GQv&#39;,
+    database_superuser     =&gt; true,
+    enable_pg_hba_defaults =&gt; false</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>password_resets_controller.rb</td>
+				<td>app/controllers/password_resets_controller.rb</td>
+				<td>class PasswordResetsController &lt; ApplicationController
+
+  def new
+    @password</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>password_zabbix.pp</td>
+				<td>modules/mysql/manifests/password_zabbix.pp</td>
+				<td>class mysql::password_zabbix {
+
+  include mysql::server
+  $mysql_password_root = inline_template</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>sign_up.html.erb</td>
+				<td>changecontrol/vendor/gems/activeldap-1.0.1/examples/al-admin/app/views/account/sign_up.html.erb</td>
+				<td>(@user.dn_attribute) %&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;label for=&quot;password&quot;&gt;&lt;%= _(&quot;Password&quot;) %&gt;&lt;/label&gt;&lt;br</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>sign_up.html.erb</td>
+				<td>ics/vendor/gems/activeldap-1.0.1/examples/al-admin/app/views/account/sign_up.html.erb</td>
+				<td>(@user.dn_attribute) %&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;label for=&quot;password&quot;&gt;&lt;%= _(&quot;Password&quot;) %&gt;&lt;/label&gt;&lt;br</td>
+				</tr>
+				
+				<tr>
+				<td>changecontrol</td>
+				<td>sign_up.html.erb</td>
+				<td>vendor/gems/activeldap-1.0.1/examples/al-admin/app/views/account/sign_up.html.erb</td>
+				<td>(@user.dn_attribute) %&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;label for=&quot;password&quot;&gt;&lt;%= _(&quot;Password&quot;) %&gt;&lt;/label&gt;&lt;br</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_utilities</td>
+				<td>mysql_db_test.rb</td>
+				<td>mysql_db_test/mysql_db_test.rb</td>
+				<td> /.*(\s\w+),.*(\s\w+)/)[1]).split)[0]
+    password = (((line.match /.*(\s\w+),.*(\s\w+)/)[2]).split)[0]
+  elsif (line</td>
+				</tr>
+				
+				<tr>
+				<td>kh_integration_tests</td>
+				<td>client_configuration.coffee</td>
+				<td>spec/lib/client_configuration.coffee</td>
+				<td>config =
+  username_konsoleh: &#39;220878&#39;
+  email_konsoleh: &#39;base@test.co.za&#39;
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>kh_integration_tests</td>
+				<td>client_configuration.yml</td>
+				<td>spec/lib/client_configuration.yml</td>
+				<td>username_konsoleh: &#39;666510&#39;
+email_konsoleh: &#39;base@test.co.za&#39;
+password_konsoleh: &#39;Asdf1234</td>
+				</tr>
+				
+				<tr>
+				<td>mailadmin</td>
+				<td>login_controller.rb</td>
+				<td>app/controllers/login_controller.rb</td>
+				<td>
+    session[:password] = nil
+    session[:pagers] = nil
+  end
+
+  def authenticate
+    emailaddress = params</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>database.rb</td>
+				<td>spec/lib/database.rb</td>
+				<td>class Database
+
+  attr_accessor :user, :password, :name
+
+  def initialize(options={})
+    @name</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh</td>
+				<td>test_helper.php</td>
+				<td>phpunit/test_helper.php</td>
+				<td>(__FILE__) . &quot;/class.password_fixture.php&quot;);
+
+class BasePasswordTestCase extends PHPUnit_Framework_TestCase</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh</td>
+				<td>client_configuration.coffee</td>
+				<td>spec/integration/casper/config/client_configuration.coffee</td>
+				<td>config =
+  username_konsoleh: &#39;887752&#39;
+  email_konsoleh: &#39;base@test.co.za&#39;
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>ldap_service.rb</td>
+				<td>app/lib/ldap_service.rb</td>
+				<td>! :username, :password
+
+    config = AppConfig.new :context =&gt; &#39;lib&#39;, :name =&gt; &#39;ldap&#39;
+    ldap = Net</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>reset_password.feature</td>
+				<td>features/reset_password.feature</td>
+				<td>Feature: Reset password
+  To reduce support costs
+  customers
+  should be able to reset their own</td>
+				</tr>
+				
+				<tr>
+				<td>kernels</td>
+				<td>str2saltedsha512_spec.rb</td>
+				<td>RI_Pienaar_Puppet3_sample_code/hiera_param_module_layout/modules/stdlib/spec/unit/puppet/parser/functions/str2saltedsha512_spec.rb</td>
+				<td>( raise_error(Puppet::ParseError) )
+  end
+
+  it &quot;should return a salted-sha512 password hash 136</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>str2saltedsha512_spec.rb</td>
+				<td>modules/stdlib/spec/functions/str2saltedsha512_spec.rb</td>
+				<td>( raise_error(Puppet::ParseError) )
+  end
+
+  it &quot;should return a salted-sha512 password hash 136 characters</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>choose_password.html.erb</td>
+				<td>app/views/password_resets/choose_password.html.erb</td>
+				<td>&lt;%= form_for(@password_reset, :url =&gt; complete_password_reset_path(:token =&gt; @password_reset.token</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>str2saltedsha512_spec.rb</td>
+				<td>modules/stdlib/spec/functions/str2saltedsha512_spec.rb</td>
+				<td>( raise_error(Puppet::ParseError) )
+  end
+
+  it &quot;should return a salted-sha512 password hash 136 characters</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>bacula-director-api-conf.rb.erb</td>
+				<td>modules/bacula/templates/bacula-director-api-conf.rb.erb</td>
+				<td> %&gt;&#39;,
+                                               :password =&gt; &#39;&lt;%= @bacula_director_db_password</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>dedi116.cpt2.host-h.net.yml</td>
+				<td>config/dedi116.cpt2.host-h.net.yml</td>
+				<td>hostname: dedi116.cpt2.host-h.net
+host_api:
+  username: konsoleh_rw
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>dedi116.cpt2.host-h.net.yml</td>
+				<td>spec/config/dedi116.cpt2.host-h.net.yml</td>
+				<td>hostname: dedi116.cpt2.host-h.net
+host_api:
+  username: konsoleh_rw
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>login.html.erb</td>
+				<td>changecontrol/app/views/login/login.html.erb</td>
+				<td>&gt;&lt;%= text_field_tag &#39;username&#39; %&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Password:&lt;/td&gt;
+        &lt;td</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>login.html.erb</td>
+				<td>ics/app/views/login/login.html.erb</td>
+				<td>&gt;&lt;%= text_field_tag &#39;username&#39; %&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Password:&lt;/td&gt;
+        &lt;td</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh</td>
+				<td>profile_steps.rb</td>
+				<td>features/step_definitions/profile_steps.rb</td>
+				<td> |
+    password = &#39;WoW!5bR4&#39;
+    profile = ProfileFacade.create domain, :clean_slate =&gt; true, :email_address</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>20100727153044_add_registrar_password_to_domain.rb</td>
+				<td>db/migrate/new/20100727153044_add_registrar_password_to_domain.rb</td>
+				<td>class AddRegistrarPasswordToDomain &lt; ActiveRecord::Migration
+  def self.up
+    add_column :Domain</td>
+				</tr>
+				
+				<tr>
+				<td>sunrise</td>
+				<td>hermes.yml.production</td>
+				<td>ansible/hermes.yml.production</td>
+				<td>---
+test:
+  endpoint: https://localhost:9393/1.0/mails
+  username: sunrise
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>sunrise</td>
+				<td>hermes.yml.staging</td>
+				<td>ansible/hermes.yml.staging</td>
+				<td>---
+test:
+  endpoint: https://localhost:9393/1.0/mails
+  username: sunrise
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>sunrise</td>
+				<td>hetzner_api.yml.production</td>
+				<td>ansible/hetzner_api.yml.production</td>
+				<td>---
+test:
+  endpoint: https://localhost/profile
+  username: sunrise
+  password: secret
+development</td>
+				</tr>
+				
+				<tr>
+				<td>sunrise</td>
+				<td>hetzner_api.yml.staging</td>
+				<td>ansible/hetzner_api.yml.staging</td>
+				<td>---
+test:
+  endpoint: https://localhost/profile
+  username: sunrise
+  password: secret
+development</td>
+				</tr>
+				
+				<tr>
+				<td>changecontrol</td>
+				<td>login.html.erb</td>
+				<td>app/views/login/login.html.erb</td>
+				<td>&gt;&lt;%= text_field_tag &#39;username&#39; %&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Password:&lt;/td&gt;
+        &lt;td</td>
+				</tr>
+				
+				<tr>
+				<td>nasr</td>
+				<td>index.rhtml</td>
+				<td>app/views/login/index.rhtml</td>
+				<td>:&lt;/label&gt; &lt;%= text_field_tag &#39;login[user]&#39; %&gt;
+    &lt;/p&gt;
+    &lt;br/&gt;
+    &lt;p&gt;
+      &lt;label&gt;Password:&lt;/label</td>
+				</tr>
+				
+				<tr>
+				<td>nasr</td>
+				<td>expire-caches</td>
+				<td>bin/expire-caches</td>
+				<td>
+
+cachemgr_password_file = ENV[&#39;HOME&#39;] + &#39;/.cachemgr_password&#39;
+cachemgr_password = nil
+if File.readable</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner-mysql_admin</td>
+				<td>db_user_credentials_file.rb</td>
+				<td>lib/mysql_admin/providers/db_user_credentials_file.rb</td>
+				<td>, db_user, db_password)
+        @db_name = db_name
+        @file_owner = file_owner
+        @db_user</td>
+				</tr>
+				
+				<tr>
+				<td>finance_vb_epp</td>
+				<td>dbo.zz_EBM_sp_ComparePassword.StoredProcedure.sql</td>
+				<td>db/procs/dbo.zz_EBM_sp_ComparePassword.StoredProcedure.sql</td>
+				<td>﻿USE [Hetzner (Pty) Ltd]
+GO
+/****** Object:  StoredProcedure [dbo].[zz_EBM_sp_ComparePassword</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>my.cnf.pass.erb</td>
+				<td>modules/mysql/templates/my.cnf.pass.erb</td>
+				<td>::server::root_password&#39;) == &#39;UNSET&#39; -%&gt;
+password=&lt;%= scope.lookupvar(&#39;mysql::server::root_password&#39;) %&gt;
+&lt;% end -%&gt;
+socket=&lt;%= @options[&#39;client&#39;][&#39;socket&#39;] -%&gt;
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>antispam_reg.pp</td>
+				<td>modules/profiles/manifests/database/mongodb/antispam_reg.pp</td>
+				<td>&#39;,
+  $port                     = &#39;27017&#39;,
+  $username                 = &#39;antispam&#39;,
+  $password</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>password.pp</td>
+				<td>modules/mysql/manifests/password.pp</td>
+				<td>class mysql::password {
+
+  include mysql::server
+  $mysql_password_root = inline_template</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>postgresql_escape.rb</td>
+				<td>modules/postgresql/lib/puppet/parser/functions/postgresql_escape.rb</td>
+				<td> arguments &quot; +
+      &quot;given (#{args.size} for 1)&quot;) if args.size != 1
+
+    password = args[0]
+
+    if</td>
+				</tr>
+				
+				<tr>
+				<td>billing_statement_explorer</td>
+				<td>hetzner_api_broker.rb</td>
+				<td>api/providers/hetzner_api/hetzner_api_broker.rb</td>
+				<td>
+  attr_accessor :password
+
+  def initialize(host, port , username, password)
+    @version = &quot;v1&quot;
+    @host</td>
+				</tr>
+				
+				<tr>
+				<td>chspuppet</td>
+				<td>postgresql_escape.rb</td>
+				<td>modules/postgresql/lib/puppet/parser/functions/postgresql_escape.rb</td>
+				<td> arguments &quot; +
+      &quot;given (#{args.size} for 1)&quot;) if args.size != 1
+
+    password = args[0]
+
+    if</td>
+				</tr>
+				
+				<tr>
+				<td>webmaildirector</td>
+				<td>mock-body.coffee</td>
+				<td>test/mock/mock-body.coffee</td>
+				<td>()
+  hetzner_webmail_password: consts.test_password()
+
+module.exports.MockBody = MockBody
+</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner-mysql_admin</td>
+				<td>connection_factory.rb</td>
+				<td>lib/mysql_admin/connection_factory.rb</td>
+				<td>&#39;) =~ /password=(.*)\n/
+      connection = Mysql2::Client.new(:host =&gt; &#39;localhost&#39;,:username =&gt; &#39;root&#39;,:password =&gt; $~[1])
+      connection
+    end
+  end
+end
+</td>
+				</tr>
+				
+				<tr>
+				<td>mailbox-password-resetter</td>
+				<td>report.rb</td>
+				<td>lib/mailbox_password_resetter/report.rb</td>
+				<td>module MailboxPasswordResetter
+  class Report
+
+    def initialize(results,domain, uniqueness</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>profile.yml.shelter</td>
+				<td>modules/aaapi/files/shared/config/profile.yml.shelter</td>
+				<td>development:
+  uri: &quot;http://hetzner-api1.tst1.host-h.net/&quot;
+  user: hetzner_api
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>profile.yml.shelter</td>
+				<td>modules/registrar_proxy/files/shared/config/profile.yml.shelter</td>
+				<td>development:
+  uri: &quot;http://hetzner-api1.tst1.host-h.net/&quot;
+  user: hetzner_api
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>profile_identity_normalizer.yml.shelter</td>
+				<td>modules/aaapi/files/shared/config/profile_identity_normalizer.yml.shelter</td>
+				<td>test:
+  url_prefix: &#39;https://api.konsoleh.co.za&#39;
+  username: &#39;aaapi&#39;
+  password: &#39;secret</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>bconsole.conf.erb</td>
+				<td>modules/bacula/templates/bconsole.conf.erb</td>
+				<td> %&gt;
+  DIRport = 9101
+  address = &lt;%= @bacula_director_ip %&gt;
+  Password = &quot;&lt;%= @bacula_director_password %&gt;&quot;
+}
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>mongoid.yml.erb</td>
+				<td>modules/capi/templates/mongoid.yml.erb</td>
+				<td>&gt;
+    - - &lt;%= host %&gt;
+      - 27017
+&lt;% end -%&gt;
+  username: &lt;%= @capi_mongodb_user %&gt;
+  password: &lt;%= @capi_mongodb_password %&gt;
+  database: &lt;%= @capi_mongodb_db %&gt;
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>aaapi.yml.development</td>
+				<td>modules/hetzner_api/files/shared/config/aaapi.yml.development</td>
+				<td>test:
+  uri_prefix: &quot;http://aaapi1.tst1.host-h.net/&quot;
+  username: hetzner_api
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>registrar_proxy.yml.development</td>
+				<td>modules/hetzner_api/files/shared/config/registrar_proxy.yml.development</td>
+				<td>test:
+  user: hetzner_api
+  password: secret
+  register_url: http://registrar-proxy1.tst1.host-h</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>aaapi.yml.shelter</td>
+				<td>modules/registrar_proxy/files/shared/config/aaapi.yml.shelter</td>
+				<td>test:
+  uri_prefix: &quot;http://aaapi1.tst1.host-h.net/&quot;
+  username: registrar_proxy
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>mongoid.yml.erb</td>
+				<td>modules/unity/templates/mongoid.yml.erb</td>
+				<td>: &lt;%= @unity_mongodb_user %&gt;
+  password: &lt;%= @unity_mongodb_password %&gt;
+  database</td>
+				</tr>
+				
+				<tr>
+				<td>rules</td>
+				<td>config.yml</td>
+				<td>config/config.yml</td>
+				<td>google:
+  username: username-goes-here
+  password: password-goes-here
+  crm_inbound_email_rules: 1BMcYYWAQGgSxdVlIlAdzcBdMdvzS2eyweVqailI4nKg
+</td>
+				</tr>
+				
+				<tr>
+				<td>smartpages</td>
+				<td>billing_intro.php</td>
+				<td>billing_admin/billing_intro.php</td>
+				<td>=$login&quot;.&quot;&amp;password=$password&quot;);
+    // Do not edit this file - use the file &quot;./billing_intro/billing_intro.php&quot;
+?&gt;</td>
+				</tr>
+				
+				<tr>
+				<td>sunrise</td>
+				<td>hermes.yml.example</td>
+				<td>config/hermes.yml.example</td>
+				<td>---
+test:
+  endpoint: https://localhost:9393/1.0/mails
+  username: sunrise
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>sunrise</td>
+				<td>hetzner_api.yml.example</td>
+				<td>config/hetzner_api.yml.example</td>
+				<td>---
+test:
+  endpoint: https://localhost/profile
+  username: sunrise
+  password: secret
+development</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>password_reset_mailer_settings.rb</td>
+				<td>app/lib/password_reset_mailer_settings.rb</td>
+				<td>class PasswordResetMailerSettings &lt; Settingslogic
+  source File.join(Rails.root, &quot;config</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>nonexistent.html.erb</td>
+				<td>app/views/password_resets/nonexistent.html.erb</td>
+				<td>&lt;p&gt;Either no such password reset ever existed, or has been deleted after a long time.&lt;/p&gt;
+&lt;p&gt;To</td>
+				</tr>
+				
+				<tr>
+				<td>registrar_proxy</td>
+				<td>profile.yml</td>
+				<td>spec/support/config/profile.yml</td>
+				<td>development:
+  uri: &quot;http://hetzner-api.vagrantup.com/&quot;
+  user: hetzner_api
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>htaccess</td>
+				<td>modules/aaapi/files/shared/config/htaccess</td>
+				<td>konsoleh: authenticate_credentials set_credentials
+forgot_password: set_credentials
+hetzner_api</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>profile.yml</td>
+				<td>modules/aaapi/files/shared/config/profile.yml</td>
+				<td>development:
+  uri: &quot;http://hetzner-api.vagrantup.com/&quot;
+  user: hetzner_api
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>profile.yml</td>
+				<td>modules/registrar_proxy/files/shared/config/profile.yml</td>
+				<td>development:
+  uri: &quot;http://hetzner-api.vagrantup.com/&quot;
+  user: hetzner_api
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>aaapi.yml</td>
+				<td>modules/hetzner_api/files/shared/config/aaapi.yml</td>
+				<td>test:
+  uri_prefix: &quot;http://aaapi.vagrantup.com/&quot;
+  username: hetzner_api
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>host_api.yml</td>
+				<td>modules/konsoleh/files/shared/host_api.yml</td>
+				<td>host_api:
+    r_username: konsoleh_r2
+    r_password</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>profile.yml</td>
+				<td>modules/password_resetter/files/shared/config/profile.yml</td>
+				<td>test:
+  uri: &quot;http://hetzner-api.vagrantup.com/&quot;
+  user: &quot;hetzner_api&quot;
+  password: &quot;secret</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>aaapi.yml</td>
+				<td>modules/registrar_proxy/files/shared/config/aaapi.yml</td>
+				<td>test:
+  uri_prefix: &quot;http://aaapi.vagrantup.com/&quot;
+  username: registrar_proxy
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>aaapi.yml</td>
+				<td>modules/rejproc/files/shared/aaapi.yml</td>
+				<td>test:
+  uri_prefix: &quot;http://aaapi.vagrantup.com/&quot;
+  username: registrar_proxy
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>hetzner_api.yml</td>
+				<td>modules/rejproc/files/shared/hetzner_api.yml</td>
+				<td>test:
+  uri: &quot;http://hetzner-api.vagrantup.com/&quot;
+  username: rejproc
+  password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>hetzner_api_spec.yml</td>
+				<td>modules/rejproc/files/shared/hetzner_api_spec.yml</td>
+				<td>test:
+  uri: &quot;http://hetzner-api.vagrantup.com/&quot;
+  super_user: hetzner_api
+  super_password: secret</td>
+				</tr>
+				
+				<tr>
+				<td>restructure_tests</td>
+				<td>db.yml.example</td>
+				<td>config/db.yml.example</td>
+				<td>username: konsoleh_genie_mysql_username
+password: secret
+host: the_live_db_hostname
+database</td>
+				</tr>
+				
+				<tr>
+				<td>tools</td>
+				<td>database.yml.testing</td>
+				<td>traffic_split/config/database.yml.testing</td>
+				<td>---
+:traffic_consumer:
+  :database: traffic_consumer_dev
+  :username: test
+  :password: test</td>
+				</tr>
+				
+				<tr>
+				<td>src</td>
+				<td>HosServerConf.pm</td>
+				<td>usr.lib/perl/Hetzner/HosServerConf.pm</td>
+				<td> $password = get_password();
+  die &quot;Could not retrieve password from $CONFIG_FILE&quot; if !defined</td>
+				</tr>
+				
+				<tr>
+				<td>capi</td>
+				<td>access_details.yml</td>
+				<td>config/access_details.yml</td>
+				<td>development:
+  api_username: konsapi
+  api_password: Dwt5HVia
+  host_api_username: konsoleh_rw</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>jetty-realm.properties.erb</td>
+				<td>modules/activemq/templates/jetty-realm.properties.erb</td>
+				<td> puppet, changes will be overwritten
+# username: password [,rolename ...]
+admin: &lt;%= @console_password %&gt;, admin
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner-mysql_admin</td>
+				<td>dump_main.rb</td>
+				<td>lib/mysql_admin/dump_main.rb</td>
+				<td>require &#39;mysql_admin&#39;
+
+job_id = ARGV[0]
+db_name = ARGV[1]
+db_user = ARGV[2]
+db_password = ARGV</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>diskusage1.cpt3.host-h.net.yaml</td>
+				<td>hieradata/fqdn/diskusage1.cpt3.host-h.net.yaml</td>
+				<td>::database::mongodb::disk_usage::password: &#39;Food6eeBog&#39;
+profiles::database::mongodb::disk_usage::admin_password: &#39;quah2sei7T&#39;
+</td>
+				</tr>
+				
+				<tr>
+				<td>domain_renewal</td>
+				<td>hetzner_api_credentials.yml</td>
+				<td>config/hetzner_api_credentials.yml</td>
+				<td>test:
+  username: test
+  password: secret
+staging:
+  username: konsolehstage
+  password: MJgJyIvwmuhCNfWzyNzbgvUFtlsl62
+production:
+  username: test
+  passowrd: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>smartpages</td>
+				<td>change_password.php</td>
+				<td>/change_password.php</td>
+				<td> two new passwords
+	if (!preg_match(&quot;/.*[A-Z]+.*/i&quot;,$_REQUEST[&quot;password_new&quot;]) || !preg_match</td>
+				</tr>
+				
+				<tr>
+				<td>kernels</td>
+				<td>credential_assessment_spec.rb</td>
+				<td>software/password_validator/spec/credential_assessment_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+require &#39;ostruct&#39;
+require &#39;password_validator&#39;
+
+describe &quot;Tests if password</td>
+				</tr>
+				
+				<tr>
+				<td>password_validator</td>
+				<td>base_spec.rb</td>
+				<td>spec/password_validator/base_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+require &#39;encrypt_password&#39;
+require &#39;ostruct&#39;
+
+require &#39;password</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh</td>
+				<td>change_password.res</td>
+				<td>includes/ui-default/en/change_password/change_password.res</td>
+				<td>&lt;?php
+$RSRC[&quot;TITLE_TEXT&quot;]			= &quot;Management&amp;nbsp;Password&quot;;
+$RSRC[&quot;kH_TEMPLATE&quot;]			= &quot;controlpanel</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>antispam.pp</td>
+				<td>modules/role/manifests/antispam.pp</td>
+				<td>class role::antispam (
+  $mongodb_user                     = &#39;antispam&#39;,
+  $mongodb_password</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>dedi-staging2.cpt3.host-h.net.yml</td>
+				<td>config/dedi-staging2.cpt3.host-h.net.yml</td>
+				<td>hostname: dedi-staging2.cpt3.host-h.net
+host_api:
+  username: konsoleh_rw
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>dedi1.tst1.host-h.net.yml</td>
+				<td>config/dedi1.tst1.host-h.net.yml</td>
+				<td>hostname: dedi1.tst1.host-h.net
+host_api:
+  username: konsoleh_rw
+  password: mm5rX8ttD6EaFFbkQQRm</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>default.yml</td>
+				<td>spec/config/default.yml</td>
+				<td>hostname: dedi1.tst1.host-h.net
+host_api:
+  username: konsoleh_rw
+  password: mm5rX8ttD6EaFFbkQQRm</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>dedi113.cpt4.host-h.net.yml</td>
+				<td>config/dedi113.cpt4.host-h.net.yml</td>
+				<td>hostname: dedi113.cpt4.host-h.net
+host_api:
+  username: konsoleh_rw
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>dedi115.cpt2.host-h.net</td>
+				<td>config/dedi115.cpt2.host-h.net</td>
+				<td>hostname: dedi115.cpt2.host-h.net
+host_api:
+  username: konsoleh_rw
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>dedi115.cpt2.host-h.net</td>
+				<td>spec/config/dedi115.cpt2.host-h.net</td>
+				<td>hostname: dedi115.cpt2.host-h.net
+host_api:
+  username: konsoleh_rw
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>default.yml</td>
+				<td>config/default.yml</td>
+				<td>hostname: dedi-staging1.cpt3.host-h.net
+host_api:
+  username: konsoleh_rw
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>www18.cpt4.host-h.net</td>
+				<td>config/www18.cpt4.host-h.net</td>
+				<td>hostname: www18.cpt4.host-h.net
+host_api:
+  username: konsoleh_rw
+  password: mm5rX8ttD6EaFFbkQQRm</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>dedi-staging1.jnb2.host-h.net</td>
+				<td>spec/config/dedi-staging1.jnb2.host-h.net</td>
+				<td>hostname: dedi-staging1.jnb2.host-h.net
+host_api:
+  username: konsoleh_rw
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>test_lpasswd.rb</td>
+				<td>changecontrol/vendor/gems/activeldap-1.0.1/test/test_lpasswd.rb</td>
+				<td>(!@user_class.exists?(uid))
+    end
+  end
+
+  def test_change_password
+    make_temporary_user do |user</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>test_lpasswd.rb</td>
+				<td>ics/vendor/gems/activeldap-1.0.1/test/test_lpasswd.rb</td>
+				<td>(!@user_class.exists?(uid))
+    end
+  end
+
+  def test_change_password
+    make_temporary_user do |user</td>
+				</tr>
+				
+				<tr>
+				<td>changecontrol</td>
+				<td>test_lpasswd.rb</td>
+				<td>vendor/gems/activeldap-1.0.1/test/test_lpasswd.rb</td>
+				<td>(!@user_class.exists?(uid))
+    end
+  end
+
+  def test_change_password
+    make_temporary_user do |user</td>
+				</tr>
+				
+				<tr>
+				<td>genie2</td>
+				<td>changepassword.php</td>
+				<td>webmail_ZA/services/changepassword.php</td>
+				<td>&gt;hasCapability(&#39;update&#39;)) {
+    $notification-&gt;push(_(&quot;Changing your password is not supported with the</td>
+				</tr>
+				
+				<tr>
+				<td>webmail</td>
+				<td>changepassword.php</td>
+				<td>services/changepassword.php</td>
+				<td>&#39;)) {
+    $notification-&gt;push(_(&quot;Changing your password is not supported with the current configuration</td>
+				</tr>
+				
+				<tr>
+				<td>kernels</td>
+				<td>Gemfile</td>
+				<td>software/password_validator/Gemfile</td>
+				<td>source &#39;https://rubygems.org&#39;
+
+# Specify your gem&#39;s dependencies in password_validator.gemspec
+gemspec
+</td>
+				</tr>
+				
+				<tr>
+				<td>kernels</td>
+				<td>report_add_spec.rb</td>
+				<td>software/password_validator/spec/report_add_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+require &#39;ostruct&#39;
+require &#39;password_validator&#39;
+
+describe &quot;Adds a vulnerable</td>
+				</tr>
+				
+				<tr>
+				<td>aaapi</td>
+				<td>profile.yml</td>
+				<td>config/profile.yml</td>
+				<td>staging:
+  uri: &quot;http://apistage.inc.konsoleh.chs.hetzner.co.za&quot;
+  user: konsapi
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>aaapi</td>
+				<td>profile_identity_normalizer.yml.example</td>
+				<td>config/profile_identity_normalizer.yml.example</td>
+				<td>test:
+  url_prefix: &#39;https://api.konsoleh.co.za&#39;
+  username: &#39;aaapi&#39;
+  password: &#39;secret&#39;
+</td>
+				</tr>
+				
+				<tr>
+				<td>aaapi</td>
+				<td>htpasswd</td>
+				<td>spec/config/htpasswd</td>
+				<td># testuser&#39;s password is testpassword
+testuser:$2a$10$PAEupsOj4fbwiSU2Jl2oh.dYerXnfnDmfAHv3L5</td>
+				</tr>
+				
+				<tr>
+				<td>aaapi</td>
+				<td>password_helper.rb</td>
+				<td>spec/support/helpers/password_helper.rb</td>
+				<td>require &#39;bcrypt&#39;
+
+def bcrypt(cleartext)
+  BCrypt::Password.create(cleartext).to_s
+end
+</td>
+				</tr>
+				
+				<tr>
+				<td>restore-frontend</td>
+				<td>profile.yml</td>
+				<td>spec/fixtures/profile.yml</td>
+				<td>development:
+  uri: &quot;http://hetzner-api1.tst1.host-h.net:80/&quot;
+  user: hetzner_api
+  password: secret
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>restore-frontend</td>
+				<td>profile.yml</td>
+				<td>spec/support/fixtures/profile.yml</td>
+				<td>development:
+  uri: &quot;http://hetzner-api1.tst1.host-h.net/&quot;
+  user: hetzner_api
+  password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>pixar</td>
+				<td>database.yml</td>
+				<td>/database.yml</td>
+				<td>---
+host: &#39;facilities1.cpt3.host-h.net&#39;
+username: &#39;pixar&#39;
+database: &#39;pixar&#39;
+password: &#39;ho2cae6E&#39;
+</td>
+				</tr>
+				
+				<tr>
+				<td>avengers</td>
+				<td>collins.yaml</td>
+				<td>deploy/roles/collins/files/collins.yaml</td>
+				<td>---
+host: http://localhost
+username: &quot;blake&quot;
+password: &quot;admin:first&quot;
+timeout: 30
+</td>
+				</tr>
+				
+				<tr>
+				<td>avengers</td>
+				<td>nipaprc</td>
+				<td>deploy/roles/nipap/files/nipaprc</td>
+				<td>[global]
+hostname = 127.0.0.1
+port     = 1337
+username = cli-user
+password = secret
+default_vrf = none
+</td>
+				</tr>
+				
+				<tr>
+				<td>api_query</td>
+				<td>hetzner_api_config.yml</td>
+				<td>spec/hetzner_api_config.yml</td>
+				<td>url: &#39;https://test.api.hetzner.co.za/&#39;
+username: &#39;bob&#39;
+password: &#39;test123&#39;
+</td>
+				</tr>
+				
+				<tr>
+				<td>kh_integration_tests</td>
+				<td>aaapi.yml</td>
+				<td>spec/lib/aaapi.yml</td>
+				<td>uri_prefix: &quot;http://aaapi1.tst1.host-h.net/&quot;
+username: konsoleh
+password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>kh_integration_tests</td>
+				<td>profile.yml</td>
+				<td>spec/lib/profile.yml</td>
+				<td>development:
+  uri: &quot;http://hetzner-api1.tst1.host-h.net/&quot;
+  user: hetzner_api
+  password: secret
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>mailbox-password-resetter</td>
+				<td>Gemfile</td>
+				<td>/Gemfile</td>
+				<td>source &#39;https://rubygems.org&#39;
+
+# Specify your gem&#39;s dependencies in mailbox_password_resetter.gemspec
+gemspec
+</td>
+				</tr>
+				
+				<tr>
+				<td>mailbox-password-resetter</td>
+				<td>passwords.rb</td>
+				<td>lib/mailbox_password_resetter/passwords.rb</td>
+				<td>require &#39;hosaccounts&#39;
+require &#39;libcdb-ruby&#39;
+require &#39;securerandom&#39;
+
+module MailboxPassword</td>
+				</tr>
+				
+				<tr>
+				<td>password_validator</td>
+				<td>Gemfile</td>
+				<td>/Gemfile</td>
+				<td>source &#39;https://rubygems.org&#39;
+
+# Specify your gem&#39;s dependencies in password_validator.gemspec
+gemspec
+</td>
+				</tr>
+				
+				<tr>
+				<td>kh_signon</td>
+				<td>login.js</td>
+				<td>public/cas/js/login.js</td>
+				<td> {
+		$(&quot;#password&quot;).focus()
+	}
+}
+
+function submit_login() {
+	if (!$(&quot;#username&quot;).val()) {
+		alert(&#39;Please provide</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>credentials.properties.development</td>
+				<td>modules/activemq/files/usr/local/apache-activemq/conf/credentials.properties.development</td>
+				<td>
+# This file is managed by puppet, changes will be overwritten
+activemq.username=system
+activemq.password</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>credentials.properties.production</td>
+				<td>modules/activemq/files/usr/local/apache-activemq/conf/credentials.properties.production</td>
+				<td>
+# This file is managed by puppet, changes will be overwritten
+activemq.username=system
+activemq.password</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>credentials.properties.staging</td>
+				<td>modules/activemq/files/usr/local/apache-activemq/conf/credentials.properties.staging</td>
+				<td>
+# This file is managed by puppet, changes will be overwritten
+activemq.username=system
+activemq.password</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>init.pp</td>
+				<td>modules/cdb/manifests/init.pp</td>
+				<td>&#39;,
+  }
+
+  package { &#39;password_gem&#39;:
+    ensure    =&gt; installed,
+    name      =&gt; &#39;password&#39;,
+    provider</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>mysql.rb</td>
+				<td>modules/mcollective/files/plugins/agent/mysql.rb</td>
+				<td>     =&gt; 180
+
+            [&quot;reset_root_password&quot;].each do |act|
+                action act do</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>mongodb_password.rb</td>
+				<td>modules/mongodb/lib/puppet/parser/functions/mongodb_password.rb</td>
+				<td>require &#39;digest/md5&#39;
+
+module Puppet::Parser::Functions
+  newfunction(:mongodb_password, :type</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>debian.cnf.erb</td>
+				<td>modules/mysql/templates/debian.cnf.erb</td>
+				<td>     = debian-sys-maint
+password = &lt;%= @mysql_password_debian %&gt;
+socket   = /var/run/mysqld/mysqld.sock</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>hermes.yml.production</td>
+				<td>modules/orderman/files/hermes.yml.production</td>
+				<td>production:
+  endpoint: &quot;http://hermes.hetzner.co.za/&quot;
+  username: &quot;order_manager&quot;
+  password: &quot;OQueec9aeBohbo1Ael0aishu&quot;
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>hermes.yml.staging</td>
+				<td>modules/orderman/files/hermes.yml.staging</td>
+				<td>staging:
+  endpoint: &quot;http://hermes.staging.hetzner.co.za/&quot;
+  username: &quot;order_manager&quot;
+  password: &quot;OhHiegei0ohlal5et6chaezu&quot;
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>aaapi.yml.production</td>
+				<td>modules/password_resetter/files/aaapi.yml.production</td>
+				<td>production:
+  uri_prefix: &quot;https://aaapi.hetzner.co.za/&quot;
+  username: forgot_password2
+  password: &quot;jinaisromblefloxish&quot;
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>aaapi.yml.staging</td>
+				<td>modules/password_resetter/files/aaapi.yml.staging</td>
+				<td>staging:
+  uri_prefix: &quot;https://staging.aaapi.hetzner.co.za/&quot;
+  username: forgot_password2
+  password: &quot;origrammarpoliticia&quot;
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>params.pp</td>
+				<td>modules/pxe/manifests/params.pp</td>
+				<td>  = $::pxe_mysql_database
+  $pxe_mysql_user      = $::pxe_mysql_user
+  $pxe_mysql_password</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>flow-base.conf_collector_cpt</td>
+				<td>modules/traffic/files/etc/flow-tools/flow-base.conf_collector_cpt</td>
+				<td>database:
+  adapter: mysql
+  database: flow_base
+  username: collector
+  password: Eivie6ut
+  host: trafficdb.hetzner.co.za
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>flow-base.conf_collector_jnb</td>
+				<td>modules/traffic/files/etc/flow-tools/flow-base.conf_collector_jnb</td>
+				<td>database:
+  adapter: mysql
+  database: flow_base
+  username: collector
+  password: Eivie6ut
+  host: trafficdb.hetzner.co.za
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>flow-base.conf_summarizer_cpt</td>
+				<td>modules/traffic/files/etc/flow-tools/flow-base.conf_summarizer_cpt</td>
+				<td>database:
+  adapter: mysql
+  database: flow_base
+  username: summarizer
+  password: OuWu4boo
+  host: trafficdb.hetzner.co.za
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>flow-base.conf_summarizer_jnb</td>
+				<td>modules/traffic/files/etc/flow-tools/flow-base.conf_summarizer_jnb</td>
+				<td>database:
+  adapter: mysql
+  database: flow_base
+  username: summarizer
+  password: OuWu4boo
+  host: trafficdb.hetzner.co.za
+</td>
+				</tr>
+				
+				<tr>
+				<td>puppet</td>
+				<td>zabsync.yaml.erb</td>
+				<td>modules/zabbix/templates/zabsync.yaml.erb</td>
+				<td> %&gt;&quot;
+&lt;% end -%&gt;
+  username: &lt;%= @zabbix_zabsync_user %&gt;
+  password: &lt;%= @zabbix_zabsync_password %&gt;
+&lt;% if</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>hostapi.yml</td>
+				<td>config/hostapi.yml</td>
+				<td>host_api:
+  username: konsoleh_rw
+  password: mm5rX8ttD6EaFFbkQQRm
+</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>hostapi.yml</td>
+				<td>spec/config/hostapi.yml</td>
+				<td>host_api:
+  username: konsoleh_rw
+  password: mm5rX8ttD6EaFFbkQQRm
+</td>
+				</tr>
+				
+				<tr>
+				<td>platform_test</td>
+				<td>ftp_client.rb</td>
+				<td>spec/helpers/ftp_client.rb</td>
+				<td>require &#39;net/ftp&#39;
+
+class FtpClient
+
+  def initialize(host, user, password, auth = true)
+    @host</td>
+				</tr>
+				
+				<tr>
+				<td>ssl_api</td>
+				<td>nipap.yml</td>
+				<td>config/nipap.yml</td>
+				<td>test:
+  uri: &#39;http://nipap.dev.avengers.hetzner.co.za:1337/RPC2&#39;
+  user: &#39;www-user&#39;
+  password</td>
+				</tr>
+				
+				<tr>
+				<td>pxeweb</td>
+				<td>database.yml</td>
+				<td>config/database.yml</td>
+				<td>production:
+  adapter: mysql
+  database: pxe
+  username: pxe
+  password: UtX152
+  host: pxe1.jnb2.host-h.net
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>konsoleh</td>
+				<td>passwords.rb</td>
+				<td>features/support/passwords.rb</td>
+				<td>require &#39;yaml&#39;
+
+module KonsoleH
+
+  module KnowsPasswords
+
+    def password_for(username)
+      if</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>smart_pages_user.rb</td>
+				<td>app/models/smart_pages_user.rb</td>
+				<td>class SmartPagesUser
+  attr_accessor :username, :password, :email_address, :user_id
+  def initialize
+    
+  end
+end
+</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>tmag_poller.yml</td>
+				<td>config/lib/tmag_poller.yml</td>
+				<td>---
+:host: mail1.cpt3.host-h.net
+:username: deleteattmag@hetzner.co.za
+:password: secret
+:mailbox: INBOX
+</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>tmag_poller.yml.example</td>
+				<td>config/lib/tmag_poller.yml.example</td>
+				<td>---
+:host: mail1.cpt3.host-h.net
+:username: deleteattmag@hetzner.co.za
+:password: secret
+:mailbox: INBOX
+</td>
+				</tr>
+				
+				<tr>
+				<td>hetzner_api</td>
+				<td>drone_sqlStart.sh</td>
+				<td>/drone_sqlStart.sh</td>
+				<td>#!/bin/bash
+cat &lt;&lt;EOF &gt;/root/.my.cnf
+[client]
+user=root
+password=&quot;rootpass&quot;
+EOF
+</td>
+				</tr>
+				
+				<tr>
+				<td>smartpages</td>
+				<td>profile.yml</td>
+				<td>config/profile.yml</td>
+				<td>test:
+  uri: http://hetzner-api.vagrantup.com
+  user: hetzner_api
+  password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>crm_importer_prototype</td>
+				<td>cache.yml</td>
+				<td>/cache.yml</td>
+				<td>cache:
+  database: konsoleh_genie
+  username: root
+  password: secret
+  host: localhost
+  port: 3306
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>crm_importer_prototype</td>
+				<td>production.yml</td>
+				<td>/production.yml</td>
+				<td>production:
+  database: konsoleh_genie
+  username: hetz_api
+  password: secret
+  host: livedb.konsoleh.co.za
+  port: 3306
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>crm_importer_prototype</td>
+				<td>sugarcrm.yml</td>
+				<td>/sugarcrm.yml</td>
+				<td>sugarcrm:
+  database: sugarcrm
+  username: root
+  password:
+  host: 192.168.0.121
+  port: 3306
+
+</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>notification.text.erb</td>
+				<td>app/views/password_reset_mailer/notification.text.erb</td>
+				<td>We have received a request to reset your konsoleH Management Password.
+Please click on the link</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>new.html.erb</td>
+				<td>app/views/password_resets/new.html.erb</td>
+				<td>&lt;%= form_for(@password_reset, :url =&gt; request_authentication_password_reset_path, :html =&gt; { :class</td>
+				</tr>
+				
+				<tr>
+				<td>password_resetter</td>
+				<td>request_authentication.html.erb_spec.rb</td>
+				<td>spec/views/password_resets/request_authentication.html.erb_spec.rb</td>
+				<td>require &#39;spec_helper&#39;
+
+describe &quot;password_resets/request_authentication.html.erb&quot; do
+
+  it &quot;advises</td>
+				</tr>
+				
+				<tr>
+				<td>registrar_proxy</td>
+				<td>htpasswd</td>
+				<td>config/htpasswd</td>
+				<td># testuser&#39;s password is testpassword
+testuser:$2a$10$PAEupsOj4fbwiSU2Jl2oh.dYerXnfnDmfAHv3L5.0Shiet982bt26
+</td>
+				</tr>
+				
+				<tr>
+				<td>registrar_proxy</td>
+				<td>htpasswd</td>
+				<td>spec/config/htpasswd</td>
+				<td># testuser&#39;s password is testpassword
+testuser:$2a$10$PAEupsOj4fbwiSU2Jl2oh.dYerXnfnDmfAHv3L5.0Shiet982bt26
+</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>profile.yml.erb</td>
+				<td>modules/konsoleh/templates/profile.yml.erb</td>
+				<td>development:
+  uri: &quot;http://&lt;%= @hetzner_api_host %&gt;/&quot;
+  user: hetzner_api
+  password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>profile.yml</td>
+				<td>modules/smartpages/files/shared/config/profile.yml</td>
+				<td>test:
+  uri: http://hetzner-api.tst1.host-h.net
+  user: hetzner_api
+  password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>pocket</td>
+				<td>smartpages_testing.yml</td>
+				<td>modules/smartpages/files/shared/config/smartpages_testing.yml</td>
+				<td>test:
+  uri: http://hetzner-api.tst1.host-h.net/
+  username: hetzner_api
+  password: secret
+</td>
+				</tr>
+				
+				<tr>
+				<td>sitebuilder</td>
+				<td>profile.yml</td>
+				<td>spec/fixtures/profile.yml</td>
+				<td>development:
+  uri: &quot;http://hetzner-api.vagrantup.com/&quot;
+  user: hetzner_api
+  password: secret
+
+</td>
+				</tr>
+				
+		</tbody>
+		</table>
+		</body>
+		</html>
+		
