@@ -72,8 +72,8 @@ class GitTroll
 		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css'>
 		</head>
 		<body>
-		<table class='table'>
-		<thead><td>Repo</td><td>File</td><td>Path</td><td>Code Snippet</td></thead>
+		<table class='table table-condensed table-striped'>
+		<thead class='active'><td>Repo</td><td>File</td><td>Path</td><td>Code Snippet</td></thead>
 		<tbody>
 		#{htmlbuilder}
 		</tbody>
@@ -85,10 +85,11 @@ class GitTroll
 
 end
 
-url = "github.hetzner.co.za/api/v3"
+url_enteprise = "https://github.codedtrue.com/api/v3"
+url = "https://api.github.com/"
 token = ENV['TOKEN']
 keyword = "password"
-file_name = "password_colon.html"
+file_name = "password.html"
 
 troll = GitTroll.new(url, token, keyword, file_name)
 troll.get_html_of_password_usage

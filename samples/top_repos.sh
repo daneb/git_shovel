@@ -3,7 +3,7 @@
 date -v-7d '+%Y-%m-%d'
 # => 2013-07-15
 
-curl -u  <token>:x-oauth-basic -G https://github.hetzner.co.za/api/v3/search/repositories       \
+curl -u  <token>:x-oauth-basic -G https://github.codedtrue.com/api/v3/search/repositories       \
     --data-urlencode "q=created:>`date -v-7d '+%Y-%m-%d'`" \
     --data-urlencode "sort=stars"                          \
     --data-urlencode "order=desc"                          \

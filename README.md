@@ -1,6 +1,7 @@
 #### GIT SHOVEL 
 
-* Connects to Github Enterprise using GitHub API to gather information
+* Currently searches for "passwords" in Repositories for Enterprise
+* Connects to Github (including Enterprise) using the github API to gather information
 * This works dynamically to follow Githubs Pagination using Link Header
 * export TOKEN =     <---- Personal Token generated from your Enterprise Account
 
@@ -9,7 +10,7 @@
 * Some basic input variables for example, if searching "code"
 - keyword (eg. "password")
 - pages (20)  // Git Limits returns 
-- url  // currently set to Github Enterprise for Hetzner
+- url  // Github Enterprise require api/version
 - filename // name of file to save to
 
 ##### Pain

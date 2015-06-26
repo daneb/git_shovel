@@ -1,6 +1,6 @@
 # This will get all projects that begin with KH
 curl -u  <token>:x-oauth-basic		\
-	-G https://github.hetzner.co.za/api/v3/search/code          \
+	-G https://github.codedtrue.com/api/v3/search/code          \
     --data-urlencode 'q=KH' \
     --data-urlencode 'sort=indexed'                   \
     --data-urlencode 'order=desc'                     \
